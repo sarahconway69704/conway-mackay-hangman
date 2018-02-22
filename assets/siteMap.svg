@@ -1,0 +1,25 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.36 366.25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>siteMap</title>
+  <rect class="cls-1" x="53.81" y="18.75" width="6.67" height="269.7"/>
+  <rect class="cls-1" x="105.38" y="-2.87" width="6.67" height="95.07" transform="translate(146.02 -86.63) rotate(90)"/>
+  <rect class="cls-1" x="149.59" y="41.33" width="6.67" height="95.07" transform="translate(298.47 155.16) rotate(180)"/>
+  <rect class="cls-1" x="19.55" y="288.45" width="68.52" height="9.11"/>
+  <rect class="cls-1" x="0.5" y="293" width="113.29" height="15.06"/>
+  <rect class="cls-1" x="480.4" y="12.44" width="6.67" height="204.99" transform="translate(591.3 -391.38) rotate(90)"/>
+  <rect class="cls-1" x="381.59" y="23.2" width="6.67" height="95.07" transform="translate(762.47 118.88) rotate(180)"/>
+  <rect class="cls-1" x="578.88" y="23.08" width="6.67" height="93.54" transform="translate(1157.05 117.12) rotate(180)"/>
+  <rect class="cls-1" x="480.07" y="-75.63" width="6.67" height="204.32" transform="translate(502.56 -479.45) rotate(90)"/>
+  <rect class="cls-2" x="189.84" y="285.4" width="336.91" height="80.35"/>
+</svg>
