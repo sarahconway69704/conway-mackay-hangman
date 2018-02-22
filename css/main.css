@@ -5,3 +5,28 @@
 {
 	display: none;
 }
+
+#container
+{
+	margin: 0 auto;
+	width: 980px;
+	display: block;
+}
+
+#hangSite
+{
+	width: 980px;
+	height: 700px;
+	margin-top:
+}
+
+#title
+{
+	margin-bottom: 20px;
+}
+
+h2
+{
+	float: left;
+	margin-left: 450px;
+}
