@@ -12,10 +12,12 @@ let currentWord = null,
   wordHint = document.querySelector(".hintString"),
   guessBox = document.querySelector("input"),
   wrongGuesses = 0,
+  correctGuesses = 0,
   resetScreen = document.querySelector('.reset-screen'),
   resetButton = resetScreen.querySelector('button')
   wrongLetterList = document.querySelector('.wrong-letters'),
-  wrongLetterArray = [];
+  wrongLetterArray = [],
+  win = resetScreen.querySelector('win');
 
 
 function resetGame() {
@@ -29,10 +31,13 @@ function resetGame() {
  init();
 }
 
-function showResetScreen() {
+function showResetScreen(message) {
   //user has lost, reset stuff and start over
   console.log('you lose, loser!');
   resetScreen.classList.add('show-piece');
+
+  resetScreen.querySelector('h3').textContent = message;
+
   }
 
 
@@ -44,6 +49,8 @@ function takeGuess() {
   if (this.value === "" || this.value.length < 1 ) {
     return;
   }
+
+  let currentGuess = this.value; //this is the current letter in the input
   //set up the win and lose bath (if/else)
   if (!currentWord.includes(this.value)) {
 
@@ -56,15 +63,35 @@ function takeGuess() {
 
     if(wrongGuesses >=5) {
     //increment the wrongGuesses Variable
-    showResetScreen();
+    showResetScreen("You lose!");
   } else {
+
     //you lose, reset
     wrongGuesses++;
   }
   //losing path
     //compare my letter gues to the word to see if it's in there
   } else {
+    let matchAgainst = currentWord.split("");
+    var hintString = wordHint.textContent.split(" ");
+
+    matchAgainst.forEach((letter, index) => {
+        if (letter === currentGuess){
+          hintString[index] = currentGuess;
+          correctGuesses++; //make sure to track correct guesses
+        }
+
+    });
+
+    wordHint.textContent = "";
+    wordHint.textContent = hintString.join(" ");
+
+    if (correctGuesses === currentWord.length){
+        showResetScreen("You win!");
+    }
     //winning path
+    //person chooses a letter that matches, guess again
+    //split the currnent word into an array so we can check letter
   }
 }
 
