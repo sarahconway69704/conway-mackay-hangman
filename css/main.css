@@ -6,27 +6,32 @@
 	display: none;
 }
 
-#container
+body
 {
 	margin: 0 auto;
-	width: 980px;
 	display: block;
+	width: 1000px;
 }
 
-#hangSite
+.show-piece
 {
-	width: 980px;
-	height: 700px;
-	margin-top:
+	display: block !important; opacity: 1 !important;
 }
 
-#title
+.cls-1
 {
-	margin-bottom: 20px;
+	opacity: 0;
 }
 
-h2
+.reset-screen
 {
-	float: left;
-	margin-left: 450px;
+	display: none;
+	padding-top: 20%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: rgba(0,0,0,9);
 }

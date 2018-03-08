@@ -2,21 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>HangMan</title>
+<title>HangMan Game</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-
+<main>
 <body>
-	<h1 class="hidden">Hangman</h1>
-	<div id="container">
-		<header id="title">
-			<h2>HangMan</h2>
-		</header>
-		<section id="mainPage">
-			<img id="hangSite" src="assets/sitemap.svg" alt="Hangman site page" width="579" height="366">
-		</section>
+	<h1>Hangman</h1>
+	<p class="hintString"></p>
+	<input type="text" class="userGuess">
+	<button id="myButton" class="initButton">run init script</button>
 
+	<div id="hangman">
+	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.18 258.43">
+	<defs>
+		<style>
+			.cls-1 {
+				stroke: #231f20;
+				stroke-miterlimit: 10;
+			}
+		</style>
+	</defs>
+	<title>stickman</title>
+	<rect id="rightArm" class="cls-1 wrong5" x="293.28" y="195.52" width="21.39" height="75.22" rx="10.69" ry="10.69" transform="translate(-297.83 188.79) rotate(-45)"/>
+	<rect id="leftArm" class="cls-1 wrong4" x="244.15" y="194.01" width="21.39" height="75.22" rx="10.69" ry="10.69" transform="translate(-2.15 479.77) rotate(-126.44)"/>
+	<rect id="leftLeg" class="cls-1 wrong3" x="257.05" y="280.76" width="21.39" height="75.22" rx="10.69" ry="10.69" transform="translate(-26.95 -185.66) rotate(30)"/>
+	<rect id="rightLeg" class="cls-1 wrong2" x="289.31" y="276.22" width="21.39" height="75.22" rx="10.69" ry="10.69" transform="translate(-356.05 209.61) rotate(-45)"/>
+	<rect id="body" class="cls-1 wrong1" x="48.49" y="83.16" width="21.39" height="128.32" rx="10.69" ry="10.69"/>
+	<circle id="head" class="cls-1 wrong0" cx="57.45" cy="46.45" r="45.95"/>
+</svg>
+</div>
+
+<section class="word-and-guess">
+	<p class="current-word">
+	</p>
+	<label for="myLetter">Enter Your Guess</label>
+	<input id="myLetter" maxLength="1" type="text" class="guess">
+	<i class="wrong-letters-label">You guessed these already!</i>
+		<p class="wrong-letters"></p>
+</section>
+
+<section class="reset-screen">
+	<h2>Game Over! You ran out of guesses!</h2>
+	<button>Try Again></button>
+</section>
+</main>
 	<script src="js/main.js"></script>
 </body>
 </html>
