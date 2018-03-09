@@ -3,7 +3,7 @@
 console.log("Linked up");
 //create an array to hold the words to be guessed (mdn) -> arrays, mdn const
 //arrays can store data
-const words = ["blue", "orange", "yellow", "magenta", "violet"];
+const words = ["snake", "shark", "deer", "moose", "whale"];
 
 
 //set up variable stack
