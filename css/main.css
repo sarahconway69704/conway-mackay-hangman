@@ -46,4 +46,26 @@ h2
 	width: 200px;
 	height: 200px;
 	float: left;
+	margin-left: 350px;
+	margin-top: 40px;
+}
+
+h1
+{
+	float: left;
+	font-size: 30px;
+}
+
+
+#guess
+{
+	clear: both;
+}
+
+#wrong
+{
+	float: left;
+	border: solid 1px black;
+	padding: 40px;
+	text-align: left;
 }

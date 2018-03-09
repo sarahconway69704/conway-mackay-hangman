@@ -9,9 +9,11 @@
 <main>
 <body>
     <h1>Hangman</h1>
+    <section id="guess">
     <p class="hintString"></p>
     <input type="text" class="userGuess">
     <button id="myButton" class="initButton">Guess!</button>
+  </section>
 
     <div id="hangman">
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.18 258.43">
@@ -33,11 +35,7 @@
 </svg>
 </div>
 
-<section class="word-and-guess">
-    <p class="current-word">
-    </p>
-    <label for="myLetter">Enter Your Guess</label>
-    <input id="myLetter" maxLength="1" type="text" class="guess">
+<section id="wrong">
     <i class="wrong-letters-label">You guessed these already!</i>
         <p class="wrong-letters"></p>
 </section>
